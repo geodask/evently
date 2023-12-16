@@ -30,6 +30,6 @@ const EventSchema = new Schema<IEvent>({
   organizer: { type: Schema.Types.ObjectId, ref: "User" },
 });
 
-const Event: Model<IEvent> = models.Event || model("Event", EventSchema);
+const Event = models.Event || model("Event", EventSchema);
 
 export default Event;
